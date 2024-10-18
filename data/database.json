@@ -1,0 +1,74 @@
+{
+    "accounts": [
+        {
+            "id": 40805500,
+            "username": "amyrobson",
+            "password": "passone",
+            "image": "../assets/images/avatars/image-amyrobson.png"
+        },
+        {
+            "id": 91899722,
+            "username": "juliusomo",
+            "password": "passtwo",
+            "image": "../assets/images/avatars/image-juliusomo.png"
+        },
+        {
+            "id": 72340063,
+            "username": "maxblagun",
+            "password": "passthree",
+            "image": "../assets/images/avatars/image-maxblagun.png"
+        },
+        {
+            "id": 91524527,
+            "username": "ramsesmiron",
+            "password": "passfour",
+            "image": "../assets/images/avatars/image-ramsesmiron.png"
+        }
+    ],
+    "comments": [
+        {
+            "id": 221713535650,
+            "content": "comment one",
+            "likers": [],
+            "user": {
+                "id": 40805500,
+                "username": "amyrobson",
+                "password": "passone",
+                "image": "../assets/images/avatars/image-amyrobson.png"
+            },
+            "replies": []
+        },
+        {
+            "id": 483041357682,
+            "content": "comment two",
+            "likers": [91899722],
+            "user": {
+                "id": 40805500,
+                "username": "amyrobson",
+                "password": "passone",
+                "image": "../assets/images/avatars/image-amyrobson.png"
+            },
+            "replies": [
+                {
+                    "id": 571266630595,
+                    "content": "sa gurl",
+                    "likers": [],
+                    "replies": [],
+                    "user": {
+                        "id": 91899722,
+                        "username": "juliusomo",
+                        "password": "passtwo",
+                        "image": "../assets/images/avatars/image-juliusomo.png"
+                    },
+                    "replyingTo": "amyrobson"
+                }
+            ]
+        }
+    ],
+    "currentUser": {
+        "id": 91899722,
+        "username": "juliusomo",
+        "password": "passtwo",
+        "image": "../assets/images/avatars/image-juliusomo.png"
+    }
+}

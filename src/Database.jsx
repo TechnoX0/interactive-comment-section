@@ -101,26 +101,6 @@ const getComment = (commentId) => {
     }
 };
 
-const setComment = (commentId, newComment) => {
-    const db = getDatabase();
-
-    for (const comment of db.comments) {
-        if (comment.id == commentId) {
-            db.comments = newComment;
-            return;
-        }
-
-        for (const reply of comment.replies) {
-            if (reply.id == commentId) {
-                reply = newComment;
-                return;
-            }
-        }
-    }
-
-    setDatabase(db);
-};
-
 const updateComment = (commentId, newContent) => {
     const db = getDatabase();
 
